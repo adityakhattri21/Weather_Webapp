@@ -1,0 +1,25 @@
+<%- include('header') -%>
+
+    <div class="card">
+      <form action="/" method="post" autocomplete="off">
+      <div class="search">
+       
+        <input type="text" class="search-box" placeholder="Search" name="value" >
+        <button class="btn" type="submit"> <img src="https://cdn-icons-png.flaticon.com/128/751/751463.png"  /></button>
+
+      </div>
+    </form>
+
+      <div class="weather">
+        <h1 class="city">Weather in <%=cityName %></h1>
+        <h1 class="temp"><%= temp %>° C</h1>
+        <img src="<%=imgSrc %>" alt="" class="icon">
+        <div class="description"><h3><%= des %></h3></div>
+        <div class="humidity"><h3>Humidity :<%= humid %>%</h3></div>
+
+      </div>
+    </div>
+
+<%- include('footer') -%> 
+
+   

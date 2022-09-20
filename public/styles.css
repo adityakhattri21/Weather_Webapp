@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #222;
+background-image: url("https://source.unsplash.com/1600x900/?landscape");
+background-size: cover;
+background-repeat: no-repeat;
+position:relative;
+}
+
+.nav{
+  position: absolute;
+  top:0;
+  color:white;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #000000d0;
+}
+
+.nav h1{
+  font-family: 'Rubik', sans-serif;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.nav a{
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  display : inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav div{
+  display: inline-block;
+  margin-left: 60%;
+}
+
+.nav img{
+  height: 50px;
+  width: 50px;
+}
+
+.footer{
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  bottom:0;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100%;
+  max-width: 900px;
+  background-color: #000000d0;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.f-data{
+  display: flex;
+  flex-direction: row;
+}
+
+.f-data h4{
+  margin-right: 10px;
+}
+.card{
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  background-color: #000000d0;
+  padding: 2em 2em 1em 2em;
+  border-radius: 30px;
+  width: 420px;
+  margin: 1em;
+  line-height: 1em;
+  height: 320px;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover{
+  background-color: #7c7c7c9b;
+}
+.btn{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #7c7c7c6b;
+  cursor:pointer;
+  transition: 0.2s ease-in-out;
+  margin: 0.5em;
+}
+.btn img{
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+.search-box{
+  padding: 0.5em 1em;
+background-color: #7c7c7c4b;
+border: none;
+outline: none;
+color: white;
+border-radius: 24px;
+font-size: 120%;
+font-family: inherit;
+width: calc(100%-100px);
+}
+
+.about-card{
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+  background-color: #000000d0;
+  padding: 2em 2em 1em 2em;
+  border-radius: 30px;
+  margin: 1em;
+  line-height: 1em;
+}
+
+.about-card img{
+  height: 400px;
+  width: 400px;
+  float: left;
+  margin: 2px 10px 2px 0;
+  border-radius: 2%;
+}
+
+.about-card p{
+    font-family: 'Oxygen', sans-serif;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+@media(max-width: 1250px) and (min-width: 601px){
+  .nav h1{
+    margin-right:50%;
+  }
+
+  .card{
+    position: absolute;
+    top : 150px;
+  }
+}
+
+@media(max-width : 600px){
+  .card{
+    position: absolute;
+    top: 250px;
+  }
+  body{
+    background-size: cover;
+    height: 700px;
+  }
+}
