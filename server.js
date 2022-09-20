@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios').default;
+const port = process.env.PORT || 3000;
 
 const apiKey= "6dd11d9eedc30352714b710567053ba5";
 
@@ -89,6 +90,6 @@ app.post("/" ,(req,res)=>{
     })
 })
 
-app.listen(3000 , ()=>{
-    console.log("Server started at port 3000");
+app.listen(port , ()=>{
+    console.log(`Server started at port ${port}`);
 })
